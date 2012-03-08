@@ -8,6 +8,7 @@
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */
+require_once(dirname(__FILE__).'/check.php');
 ?><!DOCTYPE html>
 <!--[if IE 6]>
 <html id="ie6" <?php language_attributes(); ?>>
@@ -80,7 +81,6 @@
 				$header_image = get_header_image();
 				if ( ! empty( $header_image ) ) :
 			?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<?php
 					// The header image
 					// Check if this is a post or page, if it has a thumbnail, and if it's a big one
@@ -93,15 +93,8 @@
 					else : ?>
 					<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
 				<?php endif; // end check for featured image or standard header ?>
-			</a>
 			<div class="random">
-			<?php echo do_shortcode('[pwaplusphp album="random_photo"]');?>
-			<?php echo do_shortcode('[pwaplusphp album="random_photo"]');?>
-			<?php echo do_shortcode('[pwaplusphp album="random_photo"]');?>
-			<?php echo do_shortcode('[pwaplusphp album="random_photo"]');?>
-			<?php echo do_shortcode('[pwaplusphp album="random_photo"]');?>
-			<div class="last"><?php echo do_shortcode('[pwaplusphp album="random_photo"]');?></div>
-
+			<?php echo do_shortcode('[pwaplusphp random_photos="6" thumbnail_size="165"]');?>
 			</div>
 			<?php endif; // end check for removed header image ?>
 

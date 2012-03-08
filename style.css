@@ -15,8 +15,8 @@ Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, ri
 -------------------------------------------------------------- */
 #site-title, .entry-title, .widget-title, .header_01, #site-description { font-family:'Kaushan Script', cursive; color: #adadad !important; }
 .menu-item { font-family:'Leander', cursive; color: #adadad;}
-.random .thumbnail {padding-right:8px;}
-.random .last .thumbnail {float:right; padding-right:0px;}
+.random .thumbnail {padding-right:2px;}
+.random .last.thumbnail {float:right; padding-right:0px;}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -81,7 +81,11 @@ body {
 	max-width: 1000px;
 }
 #branding hgroup {
-	margin: 0 7.6%;
+	position: absolute;
+	margin-top: 20px;
+	padding-left: 50px;
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.7);
 }
 #access div {
 	margin: 0 7.6%;
@@ -512,8 +516,6 @@ a:hover {
 	z-index: 9999;
 }
 #site-title {
-	margin-right: 270px;
-	padding: 3.65625em 0 0;
 }
 #site-title a {
 	color: #adadad !important;
@@ -530,7 +532,6 @@ a:hover {
 #site-description {
 	color: #7a7a7a;
 	font-size: 14px;
-	margin: 0 270px 3.65625em 0;
 }
 #branding img {
 	height: auto;
@@ -2406,11 +2407,9 @@ p.comment-form-comment {
 	}
 	/* Reposition the site title and description slightly */
 	#site-title {
-		padding: 5.30625em 0 0;
 	}
 	#site-title,
 	#site-description {
-		margin-right: 0;
 	}
 	/* Make sure the logo and search form don't collide */
 	#branding #searchform {
