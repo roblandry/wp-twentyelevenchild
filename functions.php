@@ -407,7 +407,7 @@ function execute_php($html){
 
 //Initialize the update checker.
 require 'theme-update-checker.php';
-$landryonlinechild_update_checker = new ThemeUpdateChecker(
-	'landryonline-child',                                            //Theme folder name, AKA "slug". 
-	'https://raw.github.com/roblandry/wp-landryonlinechild/master/update.json' //URL of the metadata file.
+$wptwentyelevenchild_update_checker = new ThemeUpdateChecker(
+	'wp-twentyelevenchild',                                            //Theme folder name, AKA "slug". 
+	'https://raw.github.com/roblandry/wp-twentyelevenchild/master/update.json' //URL of the metadata file.
 );
