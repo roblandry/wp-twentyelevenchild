@@ -1,2 +1,5 @@
-Version@1.4@
-Message@Edited for Latest twentyeleven theme
+{
+  "version" : "1.4",
+	"details_url" : "https://github.com/roblandry/landryonline-child",
+	"download_url" : "https://github.com/roblandry/landryonline-child/zipball/master"
+}
