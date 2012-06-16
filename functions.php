@@ -409,5 +409,5 @@ function execute_php($html){
 require 'theme-update-checker.php';
 $wptwentyelevenchild_update_checker = new ThemeUpdateChecker(
 	'wp-twentyelevenchild',                                            //Theme folder name, AKA "slug". 
-	'https://raw.github.com/roblandry/wp-landryonlinechild/master/update.json' //URL of the metadata file.
+	'https://raw.github.com/roblandry/wp-twentyelevenchild/master/update.json' //URL of the metadata file.
 );
