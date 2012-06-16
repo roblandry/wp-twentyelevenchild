@@ -314,7 +314,7 @@ function twentyeleven_theme_options_render_page() {
 	?>
 	<div class="wrap">
 		<?php screen_icon(); ?>
-		<h2><?php printf( __( '%s Theme Options', 'twentyeleven' ), get_current_theme() ); ?></h2>
+		<h2><?php printf( __( '%s Theme Options', 'twentyeleven' ), wp_get_theme() ); ?></h2>
 		<?php settings_errors(); ?>
 
 		<form method="post" action="options.php">
@@ -416,6 +416,8 @@ function twentyeleven_print_link_color_style() {
 		.feature-slider a.active {
 			background-color: <?php echo $link_color; ?>;
 		}
+		.widget .pwaimg, #authorgrid a img {padding:5px;border:1px solid <?php echo $link_color;; ?> !important;margin-bottom:10px;vertical-align:top !important;}
+		/*.pwaplusphp_img_nf, .pwaplusphp_img{border:1px solid <?php echo $link_color; ?> !important;}*/
 	</style>
 <?php
 }

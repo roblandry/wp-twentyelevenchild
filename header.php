@@ -8,7 +8,6 @@
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */
-require_once(dirname(__FILE__).'/check.php');
 ?><!DOCTYPE html>
 <!--[if IE 6]>
 <html id="ie6" <?php language_attributes(); ?>>
@@ -106,9 +105,11 @@ require_once(dirname(__FILE__).'/check.php');
 				<?php get_search_form(); ?>
 				</div>
 			<?php
-				else :
+				else : //added div to allow style no changes
 			?>
+				<div class="only-search with-image"> 
 				<?php get_search_form(); ?>
+				</div>
 			<?php endif; ?>
 
 			<nav id="access" role="navigation">
